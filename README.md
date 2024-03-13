@@ -1,4 +1,3 @@
-This is a test, written with the function of validating and executing a series of requirements, using the Quake 3 game log as a basis.
 The project will be able to:
 
     Read the log file;
