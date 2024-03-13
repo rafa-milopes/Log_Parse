@@ -51,7 +51,7 @@ def print_match_report(match_data, deaths_data, player_scores):
             print(f"{player}: {deaths} deaths")
 
 if __name__ == "__main__":
-    log_file_path = "log.txt"  # Replace with your log file path
+    log_file_path = "quake_log"  
     match_data, deaths_data, player_scores, total_kills = parse_log_file(log_file_path)
     print("Match Report:")
     print_match_report(match_data, deaths_data, player_scores)
