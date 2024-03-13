@@ -1,6 +1,12 @@
 import re
 from collections import defaultdict
 
+
+
+
+# Esta função pega um caminho de arquivo como entrada e analisa o arquivo de log para extrair dados de partida, dados de mortes, pontuações de jogadores e total de mortes.
+# Percorre cada linha do arquivo de log, identifica o início e o fim das partidas,
+# Analisa eventos de eliminação e rastreia conexões de jogadores e mudanças de nome.
 def parse_log_file(file_path):
     match_data = defaultdict(list)
     deaths_data = defaultdict(lambda: defaultdict(int))
@@ -40,6 +46,9 @@ def parse_log_file(file_path):
 
     return match_data, deaths_data, player_scores, total_kills
 
+
+#Esta função pega os dados da partida analisados, dados de mortes e pontuações dos jogadores como entrada e imprime um relatório para cada partida. 
+#Exibe informações sobre os jogadores, suas mortes e suas mortes.
 def print_match_report(match_data, deaths_data, player_scores):
     for match_number, players_data in match_data.items():
         print(f"Match {match_number}:")
