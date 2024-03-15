@@ -60,7 +60,7 @@ def print_match_report(match_data, deaths_data, player_scores):
             print(f"{player}: {deaths} deaths")
 
 if __name__ == "__main__":
-    log_file_path = "quake_log"  
+    log_file_path = "quake3_log"  
     match_data, deaths_data, player_scores, total_kills = parse_log_file(log_file_path)
     print("Match Report:")
     print_match_report(match_data, deaths_data, player_scores)
